@@ -1,20 +1,15 @@
-function validatePalin(str) {  
-    var flag
-    const len = str.length;  
+function palindrome(){
+    const name = 'hello'
+
+for (let i = 0; i < Math.floor(name.length / 2); i++) {
+    if (name[i] !== name[name.length - 1 - i]) {
+      return false;
+       
+    }
+  }
   
-    for (let i = 0; i < len / 2; i++) {  
-  
-        if (str[i] !== str[len - 1 - i]) {  
-            flag = 1
-        }  
-    }  
-    if(flag === 1){
-         console.log('its not palindrome')
-    } else{
-         console.log('This is palindrome')
-      }
-}  
-  
-const string = 'malayalam'  
-  
-console.log( validatePalin(string)); 
+  return true;
+}
+
+console.log(palindrome());
+
