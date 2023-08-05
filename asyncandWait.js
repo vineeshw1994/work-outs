@@ -7,7 +7,7 @@ async function fun(){
 //fun().then((msg)=>console.log(msg))
 
 let reachbus = new Promise((resolve,reject)=>{
-    const reached = false
+    const reached = true
     if(reached){
         setTimeout(resolve,3000,'bus is arrivaled')
     } else{
